@@ -42,7 +42,7 @@ void setup()
     String client_id = "esp8266-client-";
     client_id += String(WiFi.macAddress());
     Serial.printf("The client %s connects to the public mqtt broker\n", client_id.c_str());
-    if (client.connect(client_id.c_str(), mqtt_username, mqtt_password))
+  if (client.connect(client_id.c_str(), mqtt_username, mqtt_password))
     {
       Serial.println("Public emqx mqtt broker connected");
     }
@@ -116,8 +116,9 @@ void loop()
     doc["fsr1"] = fsr1Read;
     doc["fsr2"] = fsr2Read;
 
+    char output[64];
     serializeJson(doc, output);
-    client.publish(topic, output, 64);
+    client.publish(topic, output);
     delay(100);
   }
 }
