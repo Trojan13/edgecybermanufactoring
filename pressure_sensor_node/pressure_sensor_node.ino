@@ -1,13 +1,16 @@
 #include <ESP8266WiFi.h>
-#include <WebSocketsClient.h>
+#include <PubSubClient.h>
 #include <ArduinoJson.h>
 
-const char *client_name = "fsr";
-const char *ssid = "posture-control";          // The SSID (name) of the Wi-Fi network you want to connect to
-const char *password = "mpu6050!";             // The password of the Wi-Fi network
-const char *websockets_adress = "192.168.4.1"; // ws adress
-const int websockets_port = 5000;              // ws port
-WebSocketsClient ws_client;
+// MQTT Broker
+const char *mqtt_broker = "192.168.178.53/mqtt";
+const char *topic = "esp8266/fsrpressure";
+const char *mqtt_username = "";
+const char *mqtt_password = "";
+const int mqtt_port = 8083;
+
+const char *wifi_ssid = "";
+const char *wifi_password = "";
 
 const int FSR_1_PIN = 16;
 const int FSR_2_PIN = 5;
@@ -16,77 +19,68 @@ int fsr1Read;
 int fsr2Read;
 bool sensorsSetup;
 
-void webSocketEvent(WStype_t type, uint8_t *payload, size_t length)
-{
-
-  switch (type)
-  {
-  case WStype_DISCONNECTED:
-    Serial.printf("Disconnected!\n");
-    break;
-  case WStype_CONNECTED:
-  {
-    Serial.printf("Connected!\n");
-  }
-  break;
-  case WStype_TEXT:
-    Serial.printf("Get text: %s\n", payload);
-    playNotification();
-    break;
-  case WStype_BIN:
-    Serial.printf("Get binary length: %u\n", length);
-    hexdump(payload, length);
-    break;
-  }
-}
+WiFiClient espClient;
+PubSubClient client(espClient);
 
 void setup()
 {
+  // Set software serial baud to 115200;
   Serial.begin(115200);
-  pinMode(FSR_1_PIN, OUTPUT);
-  pinMode(FSR_2_PIN, OUTPUT);
-  Serial.println("Started! Setting up wifi...");
+  // connecting to a WiFi network
+  WiFi.begin(wifi_ssid, wifi_password);
+  while (WiFi.status() != WL_CONNECTED)
+  {
+    delay(500);
+    Serial.println("Connecting to WiFi..");
+  }
+  Serial.println("Connected to the WiFi network");
+  // connecting to a mqtt broker
+  client.setServer(mqtt_broker, mqtt_port);
+  client.setCallback(callback);
+  while (!client.connected())
+  {
+    String client_id = "esp8266-client-";
+    client_id += String(WiFi.macAddress());
+    Serial.printf("The client %s connects to the public mqtt broker\n", client_id.c_str());
+    if (client.connect(client_id.c_str(), mqtt_username, mqtt_password))
+    {
+      Serial.println("Public emqx mqtt broker connected");
+    }
+    else
+    {
+      Serial.print("failed with state ");
+      Serial.print(client.state());
+      delay(2000);
+    }
+  }
 
-  setupWifi();
+  setupSensors();
+  // publish and subscribe
+  client.subscribe(topic);
 }
 
-void setupWifi()
+void callback(char *topic, byte *payload, unsigned int length)
 {
-  WiFi.hostname("posture-control");
-  WiFi.begin(ssid, password); // Connect to the network
-  Serial.print("Connecting to ");
-  Serial.print(ssid);
-  Serial.println(" ...");
-  int i = 0;
-  while (WiFi.status() != WL_CONNECTED)
-  { // Wait for the Wi-Fi to connect
-    delay(1000);
-    Serial.print(++i);
-    Serial.print(' ');
+  Serial.print("Message arrived in topic: ");
+  Serial.println(topic);
+  Serial.print("Message:");
+  for (int i = 0; i < length; i++)
+  {
+    Serial.print((char)payload[i]);
   }
-  Serial.println('\n');
-  Serial.println("Connection established!");
-  Serial.print("IP address:\t");
-  Serial.println(WiFi.localIP());
-
-  Serial.println("Starting Websocket Server...");
-  ws_client.begin(websockets_adress, websockets_port, strcat("/ws?client=", client_name));
-  ws_client.onEvent(webSocketEvent);
-  ws_client.enableHeartbeat(15000, 3000, 2);
-  ws_client.setReconnectInterval(5000);
-
-  Serial.println("Setting up sensors...");
-  setupSensors();
+  Serial.println();
+  Serial.println("-----------------------");
 }
 
 void setupSensors()
 {
-  Serial.begin(115200);
+  pinMode(FSR_1_PIN, OUTPUT);
+  pinMode(FSR_2_PIN, OUTPUT);
   while (!Serial)
     delay(10);
 
   sensorsSetup = true;
-  Serial.println("FSR setup!");
+  client.publish(topic, "FSR Sensors Setup Finished");
 }
 
 int analogReadOnDigital(int readPin)
@@ -107,35 +101,24 @@ int analogReadOnDigital(int readPin)
 
 void loop()
 {
-  ws_client.loop();
+  client.loop();
+  if (sensorsSetup)
+  {
+    DynamicJsonDocument doc(1024);
 
-  DynamicJsonDocument doc(1024);
+    doc["type"] = "fsr-data";
 
-  doc["type"] = "sensor-data";
-  doc["client"] = client_name;
+    fsr1Read = analogReadOnDigital(1);
+    delay(100);
+    fsr2Read = analogReadOnDigital(2);
+    delay(100);
 
-  fsr1Read = analogReadOnDigital(1);
-  delay(100);
-  fsr2Read = analogReadOnDigital(2);
-  delay(100);
-  doc["data"]["fsr_1"] = fsr1Read;
-  doc["data"]["fsr_2"] = fsr2Read;
+    doc["fsr_1"] = fsr1Read;
+    doc["fsr_2"] = fsr2Read;
 
-  String output;
-  serializeJson(doc, output);
-  ws_client.sendTXT(output);
-  Serial.println(output);
-  delay(100);
-}
-
-void playNotification()
-{
-  tone(14, 300, 50);
-  delay(100);
-  tone(14, 400, 50);
-  delay(100);
-  tone(14, 800, 150);
-  delay(100);
-  tone(14, 1000, 350);
-  delay(100);
+    String output;
+    serializeJson(doc, output);
+    client.publish(topic, output);
+    delay(100);
+  }
 }
