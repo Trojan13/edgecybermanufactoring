@@ -104,21 +104,20 @@ void loop()
   client.loop();
   if (sensorsSetup)
   {
-    DynamicJsonDocument doc(1024);
-
-    doc["type"] = "fsr-data";
 
     fsr1Read = analogReadOnDigital(1);
     delay(100);
     fsr2Read = analogReadOnDigital(2);
     delay(100);
 
-    doc["fsr_1"] = fsr1Read;
-    doc["fsr_2"] = fsr2Read;
+    StaticJsonDocument<64> doc;
 
-    String output;
+    doc["type"] = "fsr";
+    doc["fsr1"] = fsr1Read;
+    doc["fsr2"] = fsr2Read;
+
     serializeJson(doc, output);
-    client.publish(topic, output);
+    client.publish(topic, output, 64);
     delay(100);
   }
 }
