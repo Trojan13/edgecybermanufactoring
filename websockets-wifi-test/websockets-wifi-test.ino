@@ -1,103 +1,61 @@
-/*
- * WebSocketClient.ino
- *
- *  Created on: 24.05.2015
- *
- */
-
-#include <Arduino.h>
-
 #include <ESP8266WiFi.h>
-#include <ESP8266WiFiMulti.h>
+#include <PubSubClient.h>
 
-#include <WebSocketsClient.h>
+// WiFi
+const char *ssid = "mousse"; // Enter your WiFi name
+const char *password = "qweqweqwe";  // Enter WiFi password
 
-#include <Hash.h>
+// MQTT Broker
+const char *mqtt_broker = "broker.emqx.io";
+const char *topic = "esp8266/test";
+const char *mqtt_username = "emqx";
+const char *mqtt_password = "public";
+const int mqtt_port = 1883;
 
-ESP8266WiFiMulti WiFiMulti;
-WebSocketsClient webSocket;
-
-#define USE_SERIAL Serial1
-
-void webSocketEvent(WStype_t type, uint8_t * payload, size_t length) {
-
-	switch(type) {
-		case WStype_DISCONNECTED:
-			USE_SERIAL.printf("[WSc] Disconnected!\n");
-			break;
-		case WStype_CONNECTED: {
-			USE_SERIAL.printf("[WSc] Connected to url: %s\n", payload);
-
-			// send message to server when Connected
-			webSocket.sendTXT("Connected");
-		}
-			break;
-		case WStype_TEXT:
-			USE_SERIAL.printf("[WSc] get text: %s\n", payload);
-
-			// send message to server
-			// webSocket.sendTXT("message here");
-			break;
-		case WStype_BIN:
-			USE_SERIAL.printf("[WSc] get binary length: %u\n", length);
-			hexdump(payload, length);
-
-			// send data to server
-			// webSocket.sendBIN(payload, length);
-			break;
-        case WStype_PING:
-            // pong will be send automatically
-            USE_SERIAL.printf("[WSc] get ping\n");
-            break;
-        case WStype_PONG:
-            // answer to a ping we send
-            USE_SERIAL.printf("[WSc] get pong\n");
-            break;
-    }
-
-}
+WiFiClient espClient;
+PubSubClient client(espClient);
 
 void setup() {
-	// USE_SERIAL.begin(921600);
-	USE_SERIAL.begin(115200);
+  // Set software serial baud to 115200;
+  Serial.begin(115200);
+  // connecting to a WiFi network
+  WiFi.begin(ssid, password);
+  while (WiFi.status() != WL_CONNECTED) {
+      delay(500);
+      Serial.println("Connecting to WiFi..");
+  }
+  Serial.println("Connected to the WiFi network");
+  //connecting to a mqtt broker
+  client.setServer(mqtt_broker, mqtt_port);
+  client.setCallback(callback);
+  while (!client.connected()) {
+      String client_id = "esp8266-client-";
+      client_id += String(WiFi.macAddress());
+      Serial.printf("The client %s connects to the public mqtt broker\n", client_id.c_str());
+      if (client.connect(client_id.c_str(), mqtt_username, mqtt_password)) {
+          Serial.println("Public emqx mqtt broker connected");
+      } else {
+          Serial.print("failed with state ");
+          Serial.print(client.state());
+          delay(2000);
+      }
+  }
+  // publish and subscribe
+  client.publish(topic, "hello emqx");
+  client.subscribe(topic);
+}
 
-	//Serial.setDebugOutput(true);
-	USE_SERIAL.setDebugOutput(true);
-
-	USE_SERIAL.println();
-	USE_SERIAL.println();
-	USE_SERIAL.println();
-
-	for(uint8_t t = 4; t > 0; t--) {
-		USE_SERIAL.printf("[SETUP] BOOT WAIT %d...\n", t);
-		USE_SERIAL.flush();
-		delay(1000);
-	}
-
-	WiFiMulti.addAP("SSID", "passpasspass");
-
-	//WiFi.disconnect();
-	while(WiFiMulti.run() != WL_CONNECTED) {
-		delay(100);
-	}
-
-	// server address, port and URL
-	webSocket.begin("192.168.178.53", 8083, "/mqtt");
-
-	// event handler
-	webSocket.onEvent(webSocketEvent);
-
-	// try ever 5000 again if connection has failed
-	webSocket.setReconnectInterval(5000);
-  
-  // start heartbeat (optional)
-  // ping server every 15000 ms
-  // expect pong from server within 3000 ms
-  // consider connection disconnected if pong is not received 2 times
-  webSocket.enableHeartbeat(15000, 3000, 2);
-
+void callback(char *topic, byte *payload, unsigned int length) {
+  Serial.print("Message arrived in topic: ");
+  Serial.println(topic);
+  Serial.print("Message:");
+  for (int i = 0; i < length; i++) {
+      Serial.print((char) payload[i]);
+  }
+  Serial.println();
+  Serial.println("-----------------------");
 }
 
 void loop() {
-	webSocket.loop();
+  client.loop();
 }
