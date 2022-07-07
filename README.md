@@ -3,7 +3,16 @@ A project within the module "Mobile and distributed systems". The aim of the pro
 
 ## Sub-Goals
 
+
+
+## Prototype
+![alt text](./assets/demonstrator-architecture.jpg.png "Architecture")
  
 ## Todo
 
-- [] Make ESP8266 work with local EMQX
+- [x] Make ESP8266 work with local EMQX
+- [ ] Build the spinning wheel with adjustable balance
+- [ ] Try out the ESPHome Config
+- [ ] Connect ESPHome with NanoMQ or EMQX
+- [ ] Setup everything on raspberryPi
+- [ ] Choose cloud
