@@ -6,7 +6,7 @@ A project within the module "Mobile and distributed systems". The aim of the pro
 
 
 ## Prototype
-![alt text](./assets/demonstrator-architecture.jpg.png "Architecture")
+![alt text](./assets/demonstrator-architecture.jpg "Architecture")
  
 ## Todo
 
