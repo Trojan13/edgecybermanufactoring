@@ -7,7 +7,28 @@
   "address": "mpu6050-sensor-node.local",
   "web_port": null,
   "esp_platform": "ESP8266",
-  "build_path": null,
-  "firmware_bin_path": null,
-  "loaded_integrations": []
+  "build_path": ".\\.esphome/build/mpu6050-sensor-node",
+  "firmware_bin_path": ".\\.esphome/build/mpu6050-sensor-node\\.pioenvs\\mpu6050-sensor-node\\firmware.bin",
+  "loaded_integrations": [
+    "async_tcp",
+    "captive_portal",
+    "esp8266",
+    "esphome",
+    "gpio",
+    "i2c",
+    "json",
+    "logger",
+    "md5",
+    "mdns",
+    "mpu6050",
+    "mqtt",
+    "network",
+    "ota",
+    "preferences",
+    "sensor",
+    "socket",
+    "switch",
+    "web_server_base",
+    "wifi"
+  ]
 }

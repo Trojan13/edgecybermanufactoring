@@ -11,28 +11,37 @@ ota:
   password: ""
 
 wifi:
-  ssid: ""
-  password: ""
+  ssid: "Velte Vunk"
+  password: !secret wifi_password
 
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
     ssid: "Mpu6050-Sensor-Node"
     password: "gKTXqCNsiJZi"
 
+i2c:
+  sda: D1
+  scl: D2
+  scan: true
+  id: bus_a
+
 mqtt:
-  broker: 10.0.0.2
-  username: sensor-node
-  password: !secret testtest
+  broker: 192.168.178.53
+  username: test
+  password: test
   on_message:
      - topic: actions/stop
        then:
        - switch.turn_off: relay_switch
+     - topic: actions/start
+       then:
+       - switch.turn_off: relay_switch       
 captive_portal:
 
 switch:
   - platform: gpio
     id: relay_switch
-    pin: 25
+    pin: D5
     name: "Relay"
 sensor:
   - platform: mpu6050
