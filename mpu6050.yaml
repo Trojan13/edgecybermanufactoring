@@ -1,0 +1,53 @@
+esphome:
+  name: mpu6050-sensor-node
+
+esp8266:
+  board: nodemcuv2
+
+# Enable logging
+logger:
+
+ota:
+  password: ""
+
+wifi:
+  ssid: ""
+  password: ""
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Mpu6050-Sensor-Node"
+    password: "gKTXqCNsiJZi"
+
+mqtt:
+  broker: 10.0.0.2
+  username: sensor-node
+  password: !secret testtest
+  on_message:
+     - topic: actions/stop
+       then:
+       - switch.turn_off: relay_switch
+captive_portal:
+
+switch:
+  - platform: gpio
+    id: relay_switch
+    pin: 25
+    name: "Relay"
+sensor:
+  - platform: mpu6050
+    address: 0x68
+    accel_x:
+      name: "MPU6050 Accel X"
+    accel_y:
+      name: "MPU6050 Accel Y"
+    accel_z:
+      name: "MPU6050 Accel z"
+    gyro_x:
+      name: "MPU6050 Gyro X"
+    gyro_y:
+      name: "MPU6050 Gyro Y"
+    gyro_z:
+      name: "MPU6050 Gyro z"
+    temperature:
+      name: "MPU6050 Temperature"

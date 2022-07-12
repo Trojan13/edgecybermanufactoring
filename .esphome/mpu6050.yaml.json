@@ -1,0 +1,13 @@
+{
+  "storage_version": 1,
+  "name": "mpu6050-sensor-node",
+  "comment": null,
+  "esphome_version": "2022.6.2",
+  "src_version": 1,
+  "address": "mpu6050-sensor-node.local",
+  "web_port": null,
+  "esp_platform": "ESP8266",
+  "build_path": null,
+  "firmware_bin_path": null,
+  "loaded_integrations": []
+}
