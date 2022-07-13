@@ -11,8 +11,8 @@ ota:
   password: ""
 
 wifi:
-  ssid: "Velte Vunk"
-  password: !secret wifi_password
+  ssid: ""
+  password: ""
 
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
@@ -20,8 +20,8 @@ wifi:
     password: "gKTXqCNsiJZi"
 
 i2c:
-  sda: D1
-  scl: D2
+  sda: D2
+  scl: D1
   scan: true
   id: bus_a
 
@@ -30,12 +30,12 @@ mqtt:
   username: test
   password: test
   on_message:
-     - topic: actions/stop
-       then:
-       - switch.turn_off: relay_switch
-     - topic: actions/start
-       then:
-       - switch.turn_off: relay_switch       
+    - topic: actions/stop
+      then:
+        - switch.turn_off: relay_switch
+    - topic: actions/start
+      then:
+        - switch.turn_on: relay_switch
 captive_portal:
 
 switch:
@@ -46,12 +46,31 @@ switch:
 sensor:
   - platform: mpu6050
     address: 0x68
+    update_interval: 5s
     accel_x:
       name: "MPU6050 Accel X"
+      id: accel_x
+      on_value:
+        - mqtt.publish_json:
+            topic: "acceleration"
+            payload: |-
+              root["accel_x"] = id(accel_x).state;
     accel_y:
       name: "MPU6050 Accel Y"
+      id: accel_y
+      on_value:
+        - mqtt.publish_json:
+            topic: "acceleration"
+            payload: |-
+              root["accel_y"] = id(accel_y).state;
     accel_z:
       name: "MPU6050 Accel z"
+      id: accel_z
+      on_value:
+        - mqtt.publish_json:
+            topic: "acceleration"
+            payload: |-
+              root["accel_z"] = id(accel_z).state;
     gyro_x:
       name: "MPU6050 Gyro X"
     gyro_y:
@@ -60,3 +79,9 @@ sensor:
       name: "MPU6050 Gyro z"
     temperature:
       name: "MPU6050 Temperature"
+      id: temperature
+      on_value:
+        - mqtt.publish_json:
+            topic: "temperature"
+            payload: |-
+              root["temperature"] = id(temperature).state;

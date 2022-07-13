@@ -9,8 +9,8 @@ const char *mqtt_username = "test";
 const char *mqtt_password = "test";
 const int mqtt_port = 1883;
 
-const char *wifi_ssid = "Velte Vunk";
-const char *wifi_password = "dKladHupdgZ!";
+const char *wifi_ssid = "";
+const char *wifi_password = "";
 
 const int FSR_1_PIN = 16;
 const int FSR_2_PIN = 5;
@@ -41,10 +41,10 @@ void setup()
   {
     String client_id = "esp8266-client-";
     client_id += String(WiFi.macAddress());
-    Serial.printf("The client %s connects to the public mqtt broker\n", client_id.c_str());
+    Serial.printf("The client %s connects to the mqtt broker\n", client_id.c_str());
   if (client.connect(client_id.c_str(), mqtt_username, mqtt_password))
     {
-      Serial.println("Public emqx mqtt broker connected");
+      Serial.println("mqtt broker connected");
     }
     else
     {
