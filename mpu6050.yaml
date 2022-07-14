@@ -55,6 +55,9 @@ sensor:
             topic: "acceleration"
             payload: |-
               root["accel_x"] = id(accel_x).state;
+        - mqtt.publish_json:
+            topic: "acceleration-test"
+            payload: id(accel_x).state
     accel_y:
       name: "MPU6050 Accel Y"
       id: accel_y
