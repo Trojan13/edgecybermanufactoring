@@ -22,6 +22,7 @@ U8X8_SSD1306_128X32_UNIVISION_HW_I2C u8x8(16);
 WiFiClient espClient;
 PubSubClient client(espClient);
 
+StaticJsonDocument<32> doc;
 void callback(char *topic, byte *payload, unsigned int length)
 {
   Serial.print("Message arrived in topic: ");
@@ -35,7 +36,8 @@ void callback(char *topic, byte *payload, unsigned int length)
   }
   u8x8.clear();
   u8x8.setFont(u8x8_font_amstrad_cpc_extended_r);
-  u8x8.draw2x2String(0,2,displayed_message.c_str());
+  deserializeJson(doc, displayed_message);
+  u8x8.draw2x2String(0, 2, String(doc["temperatur"], 2));
 }
 
 void setup()
@@ -58,7 +60,7 @@ void setup()
     String client_id = "esp8266-client-";
     client_id += String(WiFi.macAddress());
     Serial.printf("The client %s connects to the mqtt broker\n", client_id.c_str());
-  if (client.connect(client_id.c_str(), mqtt_username, mqtt_password))
+    if (client.connect(client_id.c_str(), mqtt_username, mqtt_password))
     {
       Serial.println("mqtt broker connected");
     }
@@ -75,7 +77,8 @@ void setup()
   client.subscribe(topic);
 }
 
-void loop(void) {
+void loop(void)
+{
   client.loop();
   delay(1000);
 }
