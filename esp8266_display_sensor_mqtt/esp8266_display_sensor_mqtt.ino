@@ -28,14 +28,7 @@ void callback(char *topic, byte *payload, unsigned int length)
   Serial.print("Message arrived in topic: ");
   Serial.println(topic);
   Serial.print("Message:");
-  displayed_message = "";
-  for (int i = 0; i < length; i++)
-  {
-    Serial.print((char)payload[i]);
-    displayed_message += (int)payload[i];
-  }
-
-  float aFloat = atof(displayed_message);
+  float aFloat = *((float *)payload);
   if (aFloat > 2.5 && aFloat < 3.5)
   {
     current_status = "low";
