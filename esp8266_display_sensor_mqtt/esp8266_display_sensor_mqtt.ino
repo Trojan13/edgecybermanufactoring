@@ -5,7 +5,7 @@
 #include <ArduinoJson.h>
 
 const char *mqtt_broker = "192.168.178.53";
-const char *topic = "acceleration-test";
+const char *topic = "mpu6050-sensor-node/sensor/mpu6050_accel_x/state";
 const char *mqtt_username = "test";
 const char *mqtt_password = "test";
 const int mqtt_port = 1883;
