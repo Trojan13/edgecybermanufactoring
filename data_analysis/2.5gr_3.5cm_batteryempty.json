@@ -1,0 +1,1835 @@
+{
+  "id": "aecadf4e-62a0-4feb-be89-4e738b2fd6b4",
+  "clientId": "mqttx_f08642e6",
+  "name": "mypc",
+  "clean": true,
+  "protocol": "mqtt",
+  "host": "192.168.178.53/mqtt",
+  "port": 8084,
+  "keepalive": 60,
+  "connectTimeout": 10,
+  "reconnect": false,
+  "reconnectPeriod": 4000,
+  "username": "test",
+  "password": "test",
+  "path": "/",
+  "certType": "",
+  "ssl": false,
+  "mqttVersion": "5.0",
+  "unreadMessageCount": 0,
+  "clientIdWithTime": false,
+  "parentId": null,
+  "orderId": null,
+  "rejectUnauthorized": true,
+  "ca": "",
+  "cert": "",
+  "key": "",
+  "isCollection": false,
+  "createAt": "2022-06-22T20:57:02.099Z",
+  "updateAt": "2022-08-11T11:44:20.067Z",
+  "sessionExpiryInterval": null,
+  "receiveMaximum": null,
+  "maximumPacketSize": null,
+  "topicAliasMaximum": null,
+  "requestResponseInformation": null,
+  "requestProblemInformation": null,
+  "userProperties": null,
+  "authenticationMethod": null,
+  "authenticationData": null,
+  "pushPropsPayloadFormatIndicator": null,
+  "pushPropsMessageExpiryInterval": null,
+  "pushPropsTopicAlias": null,
+  "pushPropsResponseTopic": null,
+  "pushPropsCorrelationData": null,
+  "pushPropsUserProperties": null,
+  "pushPropsSubscriptionIdentifier": null,
+  "pushPropsContentType": null,
+  "messages": [
+    {
+      "id": "message_ce288827-b781-43da-8f79-11a5deb40d70",
+      "out": false,
+      "createAt": "2022-08-11 14:03:25:774",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":-0.021535}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_206b0fd4-3221-4265-a7ca-af1a420d1975",
+      "out": false,
+      "createAt": "2022-08-11 14:03:25:773",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":15.29971}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_2d8588c4-915f-4ae8-8776-70ecd9386b91",
+      "out": false,
+      "createAt": "2022-08-11 14:03:25:774",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.6947}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_e968c3ac-5e41-48ce-ade9-71e0048a873d",
+      "out": false,
+      "createAt": "2022-08-11 14:03:25:772",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":8.539984}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_b4163b77-721b-4360-b057-780e60abefac",
+      "out": false,
+      "createAt": "2022-08-11 14:03:30:865",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":3.737589}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_470d7e32-4243-4329-86b0-46e0b8539c71",
+      "out": false,
+      "createAt": "2022-08-11 14:03:30:864",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":4.826323}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_28f9e49e-85fc-4efd-9167-a251de75cb1b",
+      "out": false,
+      "createAt": "2022-08-11 14:03:30:866",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.74176}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_720257df-4ed9-4954-b050-4d430191d1a4",
+      "out": false,
+      "createAt": "2022-08-11 14:03:30:865",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":6.625726}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_2b6179c9-644d-46aa-897d-8b3c63d5a413",
+      "out": false,
+      "createAt": "2022-08-11 14:03:35:778",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":0.409173}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_4f82c2c5-8d68-47ea-8a16-edcf2670719c",
+      "out": false,
+      "createAt": "2022-08-11 14:03:35:780",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":1.430908}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_bd4d1d0a-03cb-4626-b1a6-485042df2a3d",
+      "out": false,
+      "createAt": "2022-08-11 14:03:35:781",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.6947}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_3164dc9d-d46a-4a84-8ce5-b0bf633ebe7a",
+      "out": false,
+      "createAt": "2022-08-11 14:03:35:780",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":4.017549}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_a8b9ba34-8393-4f5f-aec5-9526a1c0f3dd",
+      "out": false,
+      "createAt": "2022-08-11 14:03:40:900",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":13.96451}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_370117b0-5846-4aed-a156-e9b25edc3b8d",
+      "out": false,
+      "createAt": "2022-08-11 14:03:40:900",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":-1.689333}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_364c5d3f-dc97-44ac-b77f-ce5f960106e3",
+      "out": false,
+      "createAt": "2022-08-11 14:03:40:901",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.6947}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_7595d30e-5c51-4ff3-9021-516f5c110a0c",
+      "out": false,
+      "createAt": "2022-08-11 14:03:40:898",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":4.232903}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_0401ed17-be3b-41f9-967b-97205ff62771",
+      "out": false,
+      "createAt": "2022-08-11 14:03:45:817",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":3.306881}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_ea0f9b84-fa4c-4a05-9ed1-a264a984865e",
+      "out": false,
+      "createAt": "2022-08-11 14:03:45:822",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":-1.172483}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_578b0d17-723b-4569-836d-c9c60a35605a",
+      "out": false,
+      "createAt": "2022-08-11 14:03:45:823",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.78882}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_3e8c9550-ec66-4a96-99a1-5f6b1838052a",
+      "out": false,
+      "createAt": "2022-08-11 14:03:45:821",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":12.35654}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_657d4019-9678-4977-b9fb-8e49aaf0c614",
+      "out": false,
+      "createAt": "2022-08-11 14:03:50:770",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":8.355737}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_4112552d-173c-42f4-a4b5-27aa9ee6c41e",
+      "out": false,
+      "createAt": "2022-08-11 14:03:50:771",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":-1.926222}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_71b0cb23-8425-4540-835f-d515e612a3cc",
+      "out": false,
+      "createAt": "2022-08-11 14:03:50:771",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.60059}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_81662a9d-3c12-4474-994a-9e22414f289b",
+      "out": false,
+      "createAt": "2022-08-11 14:03:50:769",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":-1.95015}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_e2ddf075-69ce-48a0-843d-aad621a8a992",
+      "out": false,
+      "createAt": "2022-08-11 14:03:55:850",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":0.27996}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_eb1d874f-0cc9-43be-ae29-7e6999bc3712",
+      "out": false,
+      "createAt": "2022-08-11 14:03:55:851",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":-1.026521}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_adfdca19-0611-4c75-a392-363610a1a4f3",
+      "out": false,
+      "createAt": "2022-08-11 14:03:55:852",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.74176}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_9a1811a5-acdb-4720-bf7f-2a98a1255598",
+      "out": false,
+      "createAt": "2022-08-11 14:03:55:850",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":9.415757}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_bcb19277-f1b8-40bd-b3ff-bda32a9fbad8",
+      "out": false,
+      "createAt": "2022-08-11 14:04:00:778",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":-1.162912}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_0bef2703-2628-4660-bdf3-39a52167566e",
+      "out": false,
+      "createAt": "2022-08-11 14:04:00:777",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":10.45903}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_54adec81-9461-48fd-b3a8-917fad560a04",
+      "out": false,
+      "createAt": "2022-08-11 14:04:00:778",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.64765}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_114612ee-faba-4bce-8ed2-9eb0c8df5505",
+      "out": false,
+      "createAt": "2022-08-11 14:04:00:777",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":1.574477}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_6b3b33cb-69b3-48f5-b469-6cb503fc0f40",
+      "out": false,
+      "createAt": "2022-08-11 14:04:05:886",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":14.05065}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_95474f2e-a164-4139-b96d-19faaf5da15c",
+      "out": false,
+      "createAt": "2022-08-11 14:04:05:887",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":1.641476}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_1dc1517a-5136-496c-b46c-55b68e695163",
+      "out": false,
+      "createAt": "2022-08-11 14:04:05:883",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":6.625726}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_138af98e-8607-4ef6-8e0d-23cbc5e97ed5",
+      "out": false,
+      "createAt": "2022-08-11 14:04:05:887",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.74176}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_1480c06b-4534-439e-84af-9b818f7200dd",
+      "out": false,
+      "createAt": "2022-08-11 14:04:10:806",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":10.64088}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_9f2845b6-d617-43b7-baad-ff355db78c06",
+      "out": false,
+      "createAt": "2022-08-11 14:04:10:807",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":-0.447458}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_37e34f48-404e-4a47-874c-9754570bad84",
+      "out": false,
+      "createAt": "2022-08-11 14:04:10:807",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.6947}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_b07337f2-cccb-4a2d-808c-1b5e72bc1dbc",
+      "out": false,
+      "createAt": "2022-08-11 14:04:10:805",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":0.428315}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_b280b756-89b8-4f53-9f44-3eda582d285b",
+      "out": false,
+      "createAt": "2022-08-11 14:04:15:783",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":12.30389}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_6af433ae-44f8-4c7d-aed9-0571c1262f26",
+      "out": false,
+      "createAt": "2022-08-11 14:04:15:783",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":-1.438086}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_8c7acf89-2720-4b5c-b68b-f809fb962acc",
+      "out": false,
+      "createAt": "2022-08-11 14:04:15:784",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.6947}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_3c3b2771-ea50-4770-ad3b-4214e91c6c46",
+      "out": false,
+      "createAt": "2022-08-11 14:04:15:782",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":3.558127}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_4630d8be-620d-4de2-8ee7-998e7f2017bc",
+      "out": false,
+      "createAt": "2022-08-11 14:04:20:836",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":9.183653}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_7aa498d1-1673-40df-b413-eae404fd1bdb",
+      "out": false,
+      "createAt": "2022-08-11 14:04:20:837",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.60059}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_928db0c2-4b53-47ad-a4fd-06db3a08d8c9",
+      "out": false,
+      "createAt": "2022-08-11 14:04:20:837",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":-0.378066}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_e67cbcb8-baae-4dcd-b811-af811d9fad85",
+      "out": false,
+      "createAt": "2022-08-11 14:04:20:834",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":0.552742}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_fe0bd094-8d5c-44e9-bba8-e31071203b48",
+      "out": false,
+      "createAt": "2022-08-11 14:04:25:770",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":13.71566}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_a62882bd-a9e8-48d5-9a0d-3839851914b4",
+      "out": false,
+      "createAt": "2022-08-11 14:04:25:770",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":0.70349}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_383f59a6-5391-4283-bc8f-16d8a477054f",
+      "out": false,
+      "createAt": "2022-08-11 14:04:25:771",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.55353}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_1330f1cc-0f72-44f3-9048-2c93de724a3a",
+      "out": false,
+      "createAt": "2022-08-11 14:04:25:770",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":5.850451}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_4d83b7da-9b76-4d0c-94d0-2f0c60b80a11",
+      "out": false,
+      "createAt": "2022-08-11 14:04:30:784",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":10.21975}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_ab7f62f3-ad2d-4899-8fc0-437bd34e56e8",
+      "out": false,
+      "createAt": "2022-08-11 14:04:30:784",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":-2.414358}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_0f573497-1fd1-4216-a50e-4142c42d8aac",
+      "out": false,
+      "createAt": "2022-08-11 14:04:30:784",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.6947}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_b5e226a8-06a7-4b1e-9abc-04aab45559bc",
+      "out": false,
+      "createAt": "2022-08-11 14:04:30:782",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":-0.550349}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_edceba2e-29e2-4043-b465-dc29365e8a49",
+      "out": false,
+      "createAt": "2022-08-11 14:04:35:787",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":8.355737}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_d01c49cc-c23f-4df3-a514-df65c3f0182a",
+      "out": false,
+      "createAt": "2022-08-11 14:04:35:787",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":-1.806581}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_0f820a93-ddec-4b95-94b4-d36a501d8a87",
+      "out": false,
+      "createAt": "2022-08-11 14:04:35:788",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.64765}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_e7e8a560-968b-491f-b84f-f2daa42b9caf",
+      "out": false,
+      "createAt": "2022-08-11 14:04:35:785",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":-1.61037}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_6fb50cc2-54a8-4e16-a342-55bdfa2cdd52",
+      "out": false,
+      "createAt": "2022-08-11 14:04:40:908",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":7.726424}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_0e421365-328e-4bf3-a6ee-9e5f03f45083",
+      "out": false,
+      "createAt": "2022-08-11 14:04:40:912",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":14.11047}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_68a33a26-4a2d-4637-b152-b25103b3dbbf",
+      "out": false,
+      "createAt": "2022-08-11 14:04:40:913",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":0.01675}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_f2aaecc1-c307-418c-86ea-c0c6a37ea840",
+      "out": false,
+      "createAt": "2022-08-11 14:04:40:913",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.64765}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_deb3dc27-7a78-4d69-a46f-577eb70afece",
+      "out": false,
+      "createAt": "2022-08-11 14:04:45:774",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":14.33301}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_fafe53e4-45c5-46ef-8b98-fbde7460859e",
+      "out": false,
+      "createAt": "2022-08-11 14:04:45:775",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":0.246461}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_d84fbbf3-3442-480e-aa32-38bbe96eecb0",
+      "out": false,
+      "createAt": "2022-08-11 14:04:45:772",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":7.611569}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_0cde667c-20de-4796-b18a-4a449427d1af",
+      "out": false,
+      "createAt": "2022-08-11 14:04:45:777",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.55353}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_87d0756f-21d0-4b38-ad5e-0c6a43b0d902",
+      "out": false,
+      "createAt": "2022-08-11 14:04:50:776",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":15.5342}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_58f9dd18-8a77-443f-96fe-6ad5f537fc1f",
+      "out": false,
+      "createAt": "2022-08-11 14:04:50:776",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":0.519242}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_89a4cccd-b942-448f-acb7-8253c8f8f00c",
+      "out": false,
+      "createAt": "2022-08-11 14:04:50:777",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.60059}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_784846a1-ab8a-4bc8-99bb-c81eac0520aa",
+      "out": false,
+      "createAt": "2022-08-11 14:04:50:775",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":10.82513}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_af30ec53-d2a3-4610-8460-da4f59622f82",
+      "out": false,
+      "createAt": "2022-08-11 14:04:55:858",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":12.21297}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_7dba3bf3-c52d-43b4-b615-36a409b13f7a",
+      "out": false,
+      "createAt": "2022-08-11 14:04:55:860",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.60059}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_166362c3-180c-4ac5-a78d-004076292987",
+      "out": false,
+      "createAt": "2022-08-11 14:04:55:859",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":-0.990629}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_9c03356f-0ed6-45c3-a95f-961cba5d95a7",
+      "out": false,
+      "createAt": "2022-08-11 14:04:55:858",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":3.34038}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_9c471315-f855-40a0-a59b-48559761cc70",
+      "out": false,
+      "createAt": "2022-08-11 14:05:00:777",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":5.692525}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_468ebd16-4708-4089-9fa3-6da9513133fa",
+      "out": false,
+      "createAt": "2022-08-11 14:05:00:781",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":14.28276}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_27f927e6-b25e-4418-b3f4-1fdd60c7a1fa",
+      "out": false,
+      "createAt": "2022-08-11 14:05:00:817",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.60059}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_538e4f94-d9f9-4223-b24a-52e6c718ed9d",
+      "out": false,
+      "createAt": "2022-08-11 14:05:00:783",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":-0.246461}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_d9323746-a605-4f7c-98b3-e62c29189c82",
+      "out": false,
+      "createAt": "2022-08-11 14:05:05:903",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":13.49073}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_048731b4-0cef-4917-bb7c-d46f30ed75ff",
+      "out": false,
+      "createAt": "2022-08-11 14:05:05:901",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":2.931208}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_baa111f6-9690-43f3-9f6b-97317cf74340",
+      "out": false,
+      "createAt": "2022-08-11 14:05:05:905",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.64765}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_844d73b9-2b05-4949-8a04-055d8a1006c5",
+      "out": false,
+      "createAt": "2022-08-11 14:05:05:905",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":-3.711268}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_698184a7-eb2b-4744-9990-aaf2ded9dbce",
+      "out": false,
+      "createAt": "2022-08-11 14:05:10:810",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":10.22692}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_71381117-4f20-4708-8306-a462cf56143d",
+      "out": false,
+      "createAt": "2022-08-11 14:05:10:811",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":-0.636491}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_d491adca-76bb-407c-8a38-1580eb740f38",
+      "out": false,
+      "createAt": "2022-08-11 14:05:10:812",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.64765}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_d877970b-5633-4d78-bc57-c9692f8cc9a8",
+      "out": false,
+      "createAt": "2022-08-11 14:05:10:809",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":1.806581}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_58583d9b-0eea-477d-9d55-76264429fb1c",
+      "out": false,
+      "createAt": "2022-08-11 14:05:15:783",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":14.67757}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_e4888e45-22ae-45c0-9d84-88530daf458e",
+      "out": false,
+      "createAt": "2022-08-11 14:05:15:783",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":0.181855}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_12b969fb-4210-4206-8747-2499b32a59d1",
+      "out": false,
+      "createAt": "2022-08-11 14:05:15:783",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.64765}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_04660d0d-678a-41b9-821f-239bd1ee450f",
+      "out": false,
+      "createAt": "2022-08-11 14:05:15:781",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":6.759724}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_6f547ec3-b2b7-478c-a52f-2fd844b434f4",
+      "out": false,
+      "createAt": "2022-08-11 14:05:20:846",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":-3.457629}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_089a1f21-c086-448c-95c4-2bb4ff6a8f08",
+      "out": false,
+      "createAt": "2022-08-11 14:05:20:847",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.74176}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_b2b980ad-1daf-44d0-a949-8c293e6765df",
+      "out": false,
+      "createAt": "2022-08-11 14:05:20:845",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":1.741975}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_06a62a8b-6170-4a62-afea-827f148b05d9",
+      "out": false,
+      "createAt": "2022-08-11 14:05:20:846",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":11.83729}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_844fdc7d-ec5b-40ff-b6b3-b47dbcfb30ab",
+      "out": false,
+      "createAt": "2022-08-11 14:05:25:776",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":8.204988}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_7c21fa83-c265-4cf7-afca-2a81251f8bed",
+      "out": false,
+      "createAt": "2022-08-11 14:05:25:780",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.60059}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_718b34e1-b990-435a-a148-2da2cc8a1cc1",
+      "out": false,
+      "createAt": "2022-08-11 14:05:25:780",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":0.349352}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_526726aa-9c4a-4d99-b0fa-784f9f9dcb3f",
+      "out": false,
+      "createAt": "2022-08-11 14:05:25:774",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":0.880559}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_6a55d35a-6035-4f90-889f-941ad34cb844",
+      "out": false,
+      "createAt": "2022-08-11 14:05:30:883",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":11.18166}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_8c5a2b73-f322-4dde-85dc-9fa79fae41c9",
+      "out": false,
+      "createAt": "2022-08-11 14:05:30:881",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":4.173082}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_020950fd-f94f-4c3b-8628-0923c8db485d",
+      "out": false,
+      "createAt": "2022-08-11 14:05:30:887",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":-0.0335}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_fc1cc91d-a63b-42f6-8451-5631f6604bb9",
+      "out": false,
+      "createAt": "2022-08-11 14:05:30:888",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.6947}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_88c653d2-5fbd-466b-8a3f-1d56c504f223",
+      "out": false,
+      "createAt": "2022-08-11 14:05:35:799",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":12.23211}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_4003fcb9-91d5-421c-8d5e-06fc2cdb8576",
+      "out": false,
+      "createAt": "2022-08-11 14:05:35:799",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.74176}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_3bc65469-b0a4-4010-a8e2-aad97e0cd9fd",
+      "out": false,
+      "createAt": "2022-08-11 14:05:35:799",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":-0.87338}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_804bd965-c684-45f7-bcd6-4223c1c6a850",
+      "out": false,
+      "createAt": "2022-08-11 14:05:35:797",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":3.759124}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_dcb8af91-2429-46d7-a4aa-7b19a522815e",
+      "out": false,
+      "createAt": "2022-08-11 14:05:40:787",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":14.27797}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_4d417753-6bbd-4c96-a2fd-29d4c99fc16f",
+      "out": false,
+      "createAt": "2022-08-11 14:05:40:787",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.6947}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_c5995d63-42ac-4f09-85a2-920838a41312",
+      "out": false,
+      "createAt": "2022-08-11 14:05:40:787",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":0.442672}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_2f9d13e5-f20e-4640-a16b-158940a80ba6",
+      "out": false,
+      "createAt": "2022-08-11 14:05:40:785",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":8.563912}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_4529ad87-827b-4aba-90bd-ecfa6a1a0e52",
+      "out": false,
+      "createAt": "2022-08-11 14:05:45:831",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":2.440679}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_66e4738d-4825-45df-8d73-0924715d67f0",
+      "out": false,
+      "createAt": "2022-08-11 14:05:45:836",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":-0.514457}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_10d00e2f-1362-4faf-8f4c-7d5ec3f041bb",
+      "out": false,
+      "createAt": "2022-08-11 14:05:45:838",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.64765}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_a0bbeff2-9cee-4c74-a242-49cee95d17c4",
+      "out": false,
+      "createAt": "2022-08-11 14:05:45:836",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":10.4686}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_2757577a-1240-4828-a94e-792d4878f4c0",
+      "out": false,
+      "createAt": "2022-08-11 14:05:50:776",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":13.1031}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_ced58d9b-a764-42ef-9056-088f116a8110",
+      "out": false,
+      "createAt": "2022-08-11 14:05:50:776",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":-0.820738}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_972071c7-941c-428c-834a-c1387084ef25",
+      "out": false,
+      "createAt": "2022-08-11 14:05:50:776",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.6947}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_ca01f25f-dc38-4290-b4da-e73beb50930e",
+      "out": false,
+      "createAt": "2022-08-11 14:05:50:774",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":5.898308}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_07eca8c5-94f6-48b2-bc4a-43fea91e70c8",
+      "out": false,
+      "createAt": "2022-08-11 14:05:55:772",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":11.77987}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_f7f89dc6-165f-45c8-a483-74c0eda959ae",
+      "out": false,
+      "createAt": "2022-08-11 14:05:55:773",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":-1.148555}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_e50a7e29-5154-49c5-9891-8ffebc013681",
+      "out": false,
+      "createAt": "2022-08-11 14:05:55:773",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.64765}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_2249ab43-2ecc-47f3-8443-f3956137210a",
+      "out": false,
+      "createAt": "2022-08-11 14:05:55:771",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":2.443072}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_f8bd76dd-eaa7-4fa4-928a-4f7caa3a4933",
+      "out": false,
+      "createAt": "2022-08-11 14:06:00:783",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":11.63869}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_b8f45a72-03e5-435c-b4b5-f7a4c6697012",
+      "out": false,
+      "createAt": "2022-08-11 14:06:00:782",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":4.23051}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_f0067f9d-55f9-4f0e-925d-f0a73936e62c",
+      "out": false,
+      "createAt": "2022-08-11 14:06:00:784",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.60059}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_a30729b4-1e35-4466-b75b-94ff41f9b00b",
+      "out": false,
+      "createAt": "2022-08-11 14:06:00:783",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":1.036092}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_44c7694b-c8fc-4bb7-9e50-949449095baa",
+      "out": false,
+      "createAt": "2022-08-11 14:06:05:960",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":6.608976}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_65ec18ad-0568-41d4-bdd4-17c336051d23",
+      "out": false,
+      "createAt": "2022-08-11 14:06:05:963",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.6947}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_23724e50-18a9-4025-b44f-5fdb075665b0",
+      "out": false,
+      "createAt": "2022-08-11 14:06:05:961",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":14.51965}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_80031e79-6dcb-4a71-914e-4eabc33a416d",
+      "out": false,
+      "createAt": "2022-08-11 14:06:05:962",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":0.251246}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_ddf141f5-201f-4a63-bbdb-5848758e2349",
+      "out": false,
+      "createAt": "2022-08-11 14:06:10:818",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":-1.70369}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_c8c4f517-0a7b-4bf3-8914-a7b7413c412f",
+      "out": false,
+      "createAt": "2022-08-11 14:06:10:819",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.64765}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_fdfc8891-653d-4c34-8b9e-b4beb87a4de0",
+      "out": false,
+      "createAt": "2022-08-11 14:06:10:816",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":4.541577}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_c7fd2894-a21a-4b9a-9f30-26e8b7b89890",
+      "out": false,
+      "createAt": "2022-08-11 14:06:10:817",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":15.82134}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_8350382b-e43e-46fe-870f-0049d3f3e4ce",
+      "out": false,
+      "createAt": "2022-08-11 14:06:15:773",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":10.57628}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_ad61e428-6bcd-4e85-9680-84386b17277b",
+      "out": false,
+      "createAt": "2022-08-11 14:06:15:774",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":-0.418744}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_662e3e2e-1f85-4827-92da-c8c8b82e6ecb",
+      "out": false,
+      "createAt": "2022-08-11 14:06:15:774",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.60059}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_a93c8dcf-caba-42d2-8455-3bba7c63d66a",
+      "out": false,
+      "createAt": "2022-08-11 14:06:15:771",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":1.301695}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_c0c8a136-ad2b-410c-b49c-19cda757f3c4",
+      "out": false,
+      "createAt": "2022-08-11 14:06:20:775",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":-1.095913}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_af5fda9d-39e0-4dfd-88b1-08fee2d1fe43",
+      "out": false,
+      "createAt": "2022-08-11 14:06:20:775",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":11.71047}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_a3dbf198-c157-43f5-bf0f-1a663ba0c38a",
+      "out": false,
+      "createAt": "2022-08-11 14:06:20:776",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.64765}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_2e92e985-76cc-4c4f-97a1-bc8737a58c9b",
+      "out": false,
+      "createAt": "2022-08-11 14:06:20:773",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":3.065206}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_64dd39de-26ec-4a66-8f22-c939d68c302f",
+      "out": false,
+      "createAt": "2022-08-11 14:06:25:781",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":11.35394}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_0e6e20cc-efc0-4a69-b60d-c263f3cc64cd",
+      "out": false,
+      "createAt": "2022-08-11 14:06:25:781",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":-0.866202}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_2e3c7e7f-985c-443d-aa1d-ddfb0c35206d",
+      "out": false,
+      "createAt": "2022-08-11 14:06:25:781",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.60059}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_c8db5789-886a-4725-8a81-adf0ac0abeb6",
+      "out": false,
+      "createAt": "2022-08-11 14:06:25:779",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":2.998207}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_1891b7f0-931f-4b3d-891d-41925c22fb2a",
+      "out": false,
+      "createAt": "2022-08-11 14:06:30:785",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":11.54776}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_7e45a2c2-38b0-4326-80b1-3f51df2d7759",
+      "out": false,
+      "createAt": "2022-08-11 14:06:30:786",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.64765}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_dc86444d-f288-4c1a-8f32-6834ff774398",
+      "out": false,
+      "createAt": "2022-08-11 14:06:30:784",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":2.95035}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_5b6d9d64-392e-4f71-b66b-6440df6a6b43",
+      "out": false,
+      "createAt": "2022-08-11 14:06:30:786",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":-0.959522}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_9b864f6e-46f4-4081-a776-b650ac05a34b",
+      "out": false,
+      "createAt": "2022-08-11 14:06:35:804",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":11.44248}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_60ede842-bdb1-4284-9f0a-da81bcaccd91",
+      "out": false,
+      "createAt": "2022-08-11 14:06:35:804",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":-0.976272}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_1e30e905-8521-4df5-9f6c-5ddbe8e1da26",
+      "out": false,
+      "createAt": "2022-08-11 14:06:35:805",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.60059}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_ae1fd322-fa01-4194-a2d1-3da25a51f18f",
+      "out": false,
+      "createAt": "2022-08-11 14:06:35:802",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":2.880959}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_5c641314-ee5b-48c6-ad66-764b89b2bc90",
+      "out": false,
+      "createAt": "2022-08-11 14:06:40:777",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":11.48794}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_8bf76684-b46a-4391-ae1b-3b8c9762ada3",
+      "out": false,
+      "createAt": "2022-08-11 14:06:40:775",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":2.85703}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_a0a08c7f-2764-4a51-9e38-a1ed0e9cc080",
+      "out": false,
+      "createAt": "2022-08-11 14:06:40:779",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":-0.9667}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_4bc3c681-502b-4a1f-bce1-fcb505dbf6ba",
+      "out": false,
+      "createAt": "2022-08-11 14:06:40:779",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.6947}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_1383f19a-cac5-47d7-9079-a6e0a736cc8a",
+      "out": false,
+      "createAt": "2022-08-11 14:06:45:789",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":2.95035}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_3c15e21c-0a7d-4c9e-a562-a9fdbfe490f9",
+      "out": false,
+      "createAt": "2022-08-11 14:06:45:794",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":11.43769}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_b2c16fbc-b77b-4e6d-b610-6c54c43fc0f8",
+      "out": false,
+      "createAt": "2022-08-11 14:06:45:795",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.64765}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_2a37cb6b-d4d2-441d-a4a6-6b4c38969ec4",
+      "out": false,
+      "createAt": "2022-08-11 14:06:45:794",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":-0.930808}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_4c3d66fb-d833-4b49-99ad-505f1f1ba4b4",
+      "out": false,
+      "createAt": "2022-08-11 14:06:50:777",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":11.49273}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_965191ec-73e2-4e17-bb93-fb18640b7081",
+      "out": false,
+      "createAt": "2022-08-11 14:06:50:777",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":-0.899701}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_9db4be15-a20c-4be7-a0e9-5746e8cc39ed",
+      "out": false,
+      "createAt": "2022-08-11 14:06:50:777",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.64765}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_d22dd2f1-bf9a-40cc-bb30-8737f8271f34",
+      "out": false,
+      "createAt": "2022-08-11 14:06:50:776",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":3.005385}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_509ba7e0-631e-4e22-9f20-009f1c809f0c",
+      "out": false,
+      "createAt": "2022-08-11 14:06:55:778",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":11.48076}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_b742e255-2447-4fda-8c7f-367a41a6a4b0",
+      "out": false,
+      "createAt": "2022-08-11 14:06:55:777",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":2.868994}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_8f0d58c6-d071-488b-b092-8aacdc0aa065",
+      "out": false,
+      "createAt": "2022-08-11 14:06:55:818",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.55353}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_227247c5-ff3a-4c3a-9866-c8091462c9c4",
+      "out": false,
+      "createAt": "2022-08-11 14:06:55:817",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":-0.933201}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_a6220d47-0d62-49a3-aacb-f9da2553e66a",
+      "out": false,
+      "createAt": "2022-08-11 14:07:00:795",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":11.41376}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_72ed3719-5514-4140-81f0-fa1f91847c79",
+      "out": false,
+      "createAt": "2022-08-11 14:07:00:795",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":-0.897309}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_bc01683a-b838-4813-be2c-843a50c8519c",
+      "out": false,
+      "createAt": "2022-08-11 14:07:00:796",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.55353}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_fca7499a-1d0f-4367-a5df-0519933e1e32",
+      "out": false,
+      "createAt": "2022-08-11 14:07:00:789",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":2.945565}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_afef3768-d787-41ae-a73d-d5e246746a88",
+      "out": false,
+      "createAt": "2022-08-11 14:07:05:806",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":11.51426}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_9c93a91a-e047-425f-be9e-91625391775c",
+      "out": false,
+      "createAt": "2022-08-11 14:07:05:805",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":2.89053}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_e8b24703-15ef-4183-acd6-c8c7883778fc",
+      "out": false,
+      "createAt": "2022-08-11 14:07:05:810",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":-1.0002}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_0f1113d2-4bcb-41e5-8b81-f51a20d5bf30",
+      "out": false,
+      "createAt": "2022-08-11 14:07:05:812",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.50647}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_3f483f47-0c0b-4623-b30f-016742eaaab2",
+      "out": false,
+      "createAt": "2022-08-11 14:07:10:774",
+      "topic": "acceleration",
+      "payload": "{\"accel_y\":11.52862}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_8e6852bc-c8ce-467e-a05a-0fa5e3153d9f",
+      "out": false,
+      "createAt": "2022-08-11 14:07:10:775",
+      "topic": "acceleration",
+      "payload": "{\"accel_z\":-0.899701}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_49617891-7341-4ee2-bfc1-3987fcb225d2",
+      "out": false,
+      "createAt": "2022-08-11 14:07:10:776",
+      "topic": "temperature",
+      "payload": "{\"temperature\":30.6947}",
+      "qos": 0,
+      "retain": false
+    },
+    {
+      "id": "message_dfb003a9-5257-4a6e-b860-29ce58e0108d",
+      "out": false,
+      "createAt": "2022-08-11 14:07:10:774",
+      "topic": "acceleration",
+      "payload": "{\"accel_x\":2.981457}",
+      "qos": 0,
+      "retain": false
+    }
+  ],
+  "subscriptions": [
+    {
+      "id": "scription_03758bd2-a5cb-4b70-b784-fafdcdaea888",
+      "topic": "mpu6050-sensor-node/debug",
+      "qos": 0,
+      "disabled": true,
+      "alias": "",
+      "retain": false,
+      "nl": false,
+      "rap": false,
+      "rh": 0,
+      "subscriptionIdentifier": null,
+      "userProperties": null,
+      "color": "#AD0097",
+      "createAt": "2022-07-12T11:30:03.191Z",
+      "connectionId": "aecadf4e-62a0-4feb-be89-4e738b2fd6b4"
+    },
+    {
+      "id": "scription_155e41bd-a54d-41c5-82af-62e28a694243",
+      "topic": "mpu6050-sensor-node/status",
+      "qos": 0,
+      "disabled": true,
+      "alias": "",
+      "retain": false,
+      "nl": false,
+      "rap": false,
+      "rh": 0,
+      "subscriptionIdentifier": null,
+      "userProperties": null,
+      "color": "#0DCB05",
+      "createAt": "2022-07-12T11:30:03.191Z",
+      "connectionId": "aecadf4e-62a0-4feb-be89-4e738b2fd6b4"
+    },
+    {
+      "id": "scription_1b3fec82-e15b-450a-92c9-5a03661993b6",
+      "topic": "actions/start",
+      "qos": 0,
+      "disabled": true,
+      "alias": "",
+      "retain": false,
+      "nl": false,
+      "rap": false,
+      "rh": 0,
+      "subscriptionIdentifier": null,
+      "userProperties": null,
+      "color": "#3994BB",
+      "createAt": "2022-07-12T11:30:03.191Z",
+      "connectionId": "aecadf4e-62a0-4feb-be89-4e738b2fd6b4"
+    },
+    {
+      "id": "scription_60eafbf2-d282-47f7-bc34-d31f63bc29bd",
+      "topic": "mpu6050-sensor-node/sensor/mpu6050_accel_x/state",
+      "qos": 0,
+      "disabled": true,
+      "alias": "",
+      "retain": false,
+      "nl": false,
+      "rap": false,
+      "rh": 0,
+      "subscriptionIdentifier": null,
+      "userProperties": null,
+      "color": "#538A95",
+      "createAt": "2022-07-12T11:30:03.191Z",
+      "connectionId": "aecadf4e-62a0-4feb-be89-4e738b2fd6b4"
+    },
+    {
+      "id": "scription_a54f92b8-894e-4516-b1e1-26331e8ec370",
+      "topic": "acceleration",
+      "qos": 0,
+      "disabled": false,
+      "alias": "",
+      "retain": false,
+      "nl": false,
+      "rap": false,
+      "rh": 0,
+      "subscriptionIdentifier": null,
+      "userProperties": null,
+      "color": "#35FB86",
+      "createAt": "2022-07-12T11:30:03.191Z",
+      "connectionId": "aecadf4e-62a0-4feb-be89-4e738b2fd6b4"
+    },
+    {
+      "id": "scription_eadb6e9c-f900-4545-bcdd-6107921e889c",
+      "topic": "temperature",
+      "qos": 0,
+      "disabled": false,
+      "alias": "",
+      "retain": false,
+      "nl": false,
+      "rap": false,
+      "rh": 0,
+      "subscriptionIdentifier": null,
+      "userProperties": null,
+      "color": "#C8D61C",
+      "createAt": "2022-07-12T11:30:03.191Z",
+      "connectionId": "aecadf4e-62a0-4feb-be89-4e738b2fd6b4"
+    }
+  ],
+  "will": {
+    "id": "19db3573-aa85-4407-b0e2-382abb334677",
+    "lastWillTopic": "",
+    "lastWillPayload": "",
+    "lastWillQos": 0,
+    "lastWillRetain": false,
+    "willDelayInterval": null,
+    "payloadFormatIndicator": null,
+    "messageExpiryInterval": null,
+    "contentType": "",
+    "responseTopic": "",
+    "correlationData": null,
+    "userProperties": null,
+    "properties": {
+      "willDelayInterval": null,
+      "payloadFormatIndicator": null,
+      "messageExpiryInterval": null,
+      "contentType": "",
+      "responseTopic": "",
+      "correlationData": null,
+      "userProperties": null
+    }
+  },
+  "properties": {
+    "sessionExpiryInterval": null,
+    "receiveMaximum": null,
+    "maximumPacketSize": null,
+    "topicAliasMaximum": null,
+    "requestResponseInformation": null,
+    "requestProblemInformation": null,
+    "authenticationMethod": null
+  }
+}

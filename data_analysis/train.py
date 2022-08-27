@@ -5,6 +5,7 @@ import tensorflow as tf
 
 print(f"TensorFlow version = {tf.__version__}\n")
 
+
 # Set a fixed random seed value, for reproducibility, this will allow us to get
 # the same random numbers each time the notebook is run
 SEED = 1337
@@ -18,7 +19,7 @@ MOVEMENTS = [
     "no",
 ]
 
-SAMPLES_PER_MOVEMENT = 45
+SAMPLES_PER_MOVEMENT = 5
 
 NUM_MOVEMENTS = len(MOVEMENTS)
 
@@ -36,7 +37,6 @@ for MOVEMENT_index in range(NUM_MOVEMENTS):
   output = ONE_HOT_ENCODED_MOVEMENTS[MOVEMENT_index]
   
   df = pd.read_csv("data_" + MOVEMENT + "_motion.csv",sep=',')
-  
   # calculate the number of MOVEMENT recordings in the file
   num_recordings = int(df.shape[0] / SAMPLES_PER_MOVEMENT)
   
