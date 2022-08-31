@@ -18,8 +18,8 @@ Edge computing-based, data-driven machine health and process monitoring system i
 ## Todo
 
 - [x] Make ESP8266 work with local EMQX
-- [ ] Build the spinning wheel with adjustable balance
-- [ ] Try out the ESPHome Config
-- [ ] Connect ESPHome with NanoMQ or EMQX
-- [ ] Setup everything on raspberryPi
-- [ ] Choose cloud
+- [x] Build the spinning wheel with adjustable balance
+- [x] Try out the ESPHome Config
+- [x] Connect ESPHome with NanoMQ or EMQX
+- [x] Setup everything on raspberryPi
+- [x] Choose cloud
