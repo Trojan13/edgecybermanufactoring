@@ -23,3 +23,7 @@ Edge computing-based, data-driven machine health and process monitoring system i
 - [x] Connect ESPHome with NanoMQ or EMQX
 - [x] Setup everything on raspberryPi
 - [x] Choose cloud
+
+
+## Paper 
+https://github.com/Trojan13/edgecybermanufacturing/blob/main/MODI_Projekt_Bericht.pdf
